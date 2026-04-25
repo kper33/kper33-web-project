@@ -6,3 +6,4 @@
 ==================================================================================
 
 # Project 3
+# I had a difficult time. So many mistakes. So many revisions.

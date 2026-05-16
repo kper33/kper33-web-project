@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pontiac Firebird - Project 4</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="project2.html">Project 2</a></li>
+            <li><a href="project3.html">Project 3</a></li>
+            <li><a href="project4.html" class="active">Project 4</a></li>
+        </ul>
+    </nav>
+        
+    <hr>
+
+    <main>
+        <h1>The Greatest Car That Ever Lived: Pontiac Firebird</h1>
+
+        <figure>
+            <!-- Proper relative path used, alt text added for accessibility -->
+            <img src="../images/blackfirebird.jpg" alt="A black 1970s Pontiac Firebird Trans Am with the hood open">
+            <figcaption>The 1970s Trans Am featured the widely recognized 'Screaming Chicken' hood decal. (Photo Attribution: Public Domain/User Submitted)</figcaption>
+        </figure>
+
+        <h2>A Quick Overview</h2>
+        
+        <p>The Pontiac Firebird, an icon of American automotive history, was built by the Pontiac division of General Motors between 1967 and 2002. This was designed as GM's answer to the Ford Mustang and shared the same platform as the Chevrolet Camaro. Over its 35 years in production, it developed a fanbase of car enthusiasts, known for its eye-catching styling and powerful V8 engines.</p>
+        
+        <p>The second generation, produced from 1970 to 1981, is when the car really picked up popularity. This period saw the rise of the Trans Am, which featured the famous "Screaming Chicken" decal on the hood. This model is known for being featured in the hit 1977 movie <i>Smokey and the Bandit</i>.</p>
+
+        <p>By the 1980s, the third generation introduced a sleeker and sportier look with pop-up headlights, while the fourth and final generation (1993-2002) focused on performance with the LS1 V8 engine. Although production ended in 2002, the Firebird remains a highly sought-after vehicle for car collectors and enthusiasts today.</p>
+
+        <h3>Key Performance Features</h3>
+        <ul>
+            <li>High-displacement V8 engines for maximum torque.</li>
+            <li>Functional "Ram Air" hood scoops to cool the engine.</li>
+            <li>Honeycomb or "Snowflake" style aluminum wheels.</li>
+            <li>Upgraded suspension packages for the Trans Am models.</li>
+        </ul>
+
+        <h3>Production Generations</h3>
+      
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Generation</th> 
+                    <th scope="col">Years Produced</th>
+                    <th scope="col">Style Focus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>First Gen</td>
+                    <td>1967 – 1969</td>
+                    <td>Classic Chrome & Muscle</td>
+                </tr>
+                <tr>
+                    <td>Second Gen</td>
+                    <td>1970 – 1981</td>
+                    <td>Pop Culture & Large Decals</td>
+                </tr>
+                <tr>
+                    <td>Third Gen</td>
+                    <td>1982 – 1992</td>
+                    <td>Aerodynamics & Tech</td>
+                </tr>
+                <tr>
+                    <td>Fourth Gen</td>
+                    <td>1993 – 2002</td>
+                    <td>Modern Power & Curves</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- External link requirement -->
+        <p>Want to dive deeper into Firebird history? Visit the official <a href="https://www.gm.com" target="_blank" rel="noopener">General Motors Heritage Center</a>.</p>
+
+        <hr>
+
+        <!-- Section for JavaScript Form and Dynamic Content -->
+        <section class="form-container">
+            <h2>Firebird Fan Club</h2>
+            <p>Share your favorite Firebird generation to receive a customized greeting!</p>
+            
+            <form id="fanForm">
+                <label for="userName">Your Name:</label>
+                <input type="text" id="userName" required placeholder="Enter your name">
+
+                <label for="favGen">Favorite Generation:</label>
+                <select id="favGen" required>
+                    <option value="">-- Select One --</option>
+                    <option value="1st Gen">1st Gen (1967-1969)</option>
+                    <option value="2nd Gen">2nd Gen (1970-1981)</option>
+                    <option value="3rd Gen">3rd Gen (1982-1992)</option>
+                    <option value="4th Gen">4th Gen (1993-2002)</option>
+                </select>
+
+                <button type="submit" id="submitBtn">Join the Club</button>
+            </form>
+
+            <!-- Target div for dynamic JS message -->
+            <div id="dynamicGreeting" class="greeting-box"></div>
+        </section>
+
+    </main>
+
+    <!-- JS script placed at the bottom of the body for proper loading -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
